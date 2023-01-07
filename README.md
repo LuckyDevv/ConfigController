@@ -65,8 +65,7 @@ $default - this is the value that will be set in the config if its file does not
 ```php
 <?php
 require_once 'ConfigController.php'; // Initialize the script
-use ConfigController; // Using the script
-$jsonConfig = new Config('example.json', ConfigController::JSON); // Creating a configuration file with the JSON type
+$jsonConfig = new ConfigController('example.json', ConfigController::JSON); // Creating a configuration file with the JSON type
 $jsonConfig->set('LuckyDev', 'Hi, I`m LuckyDev, an IT developer from Russia'); // We write down the value we need
 $jsonConfig->save(); // Save it. This is very important!
 if($jsonConfig->exists('LuckyDev')){ // Checking if the record exists

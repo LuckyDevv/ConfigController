@@ -26,7 +26,7 @@ JSON_UNESCAPED_UNICODE
 
 <h1 align='center'>Functions</h1>
 
-### Class construction: '$filename, $type, $default'
+### Class construction: `$filename, $type, $default`
 
 > $filename - this is the path to the file that will become the configuration. By default = 'default.txt'<br>
 $type - this is the configuration type: YAML, JSON, SERIALIZE, ENUM. By default = ConfigController::DETECT<br>
